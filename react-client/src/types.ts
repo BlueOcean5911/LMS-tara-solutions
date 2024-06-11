@@ -1,8 +1,7 @@
-export type Message = {
-    body: string
-}
+// src/types.ts
 
-export type User = {
-    name: string,
-    messages : Message[]
-}
+import type { GetUsersQuery } from "./graphql/generated"
+
+
+export type Message = GetUsersQuery["users"][0]["messages"][0]
+export type User = GetUsersQuery["users"][0]
