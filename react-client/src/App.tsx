@@ -1,5 +1,4 @@
 // src/App.tsx
-
 // import { User } from './types'
 import { useQuery } from 'urql'
 import { GetUsersDocument } from './graphql/generated'
